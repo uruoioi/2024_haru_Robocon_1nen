@@ -71,7 +71,7 @@ int main(void){
 
 	uart.init(A9,A10,SERIAL1,115200);
 
-    mdd.tcp(OMNI4_MODE,MOTOR_PID_GAIN,10,2000);
+        mdd.tcp(OMNI4_MODE,MOTOR_PID_GAIN,10,2000);
 
 	sken_system.addTimerInterruptFunc(main_interrupt, 0, 1);
 	mdd.init(MDD_0,A12,A11,CAN_1);
@@ -85,7 +85,7 @@ int main(void){
 	encoder.init(A0,A1,TIMER5);
 	motor3.init(Apin,A6,TIMER1,CH1);
 	motor3.init(Apin,A8,TIMER1,CH1);
-    motor2.init(Apin,A11,TIMER1,CH1);
+        motor2.init(Apin,A11,TIMER1,CH1);
 	motor1.init(Apin,A13,TIMER1,CH1);
 
 	  mdd.init(C10, C11, SERIAL3);  //MDDピン設定
